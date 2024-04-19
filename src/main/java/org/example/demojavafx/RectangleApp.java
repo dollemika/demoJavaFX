@@ -10,8 +10,8 @@ import java.io.IOException;
 public class RectangleApp extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("recApp.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 320, 240);
+        FXMLLoader fxmlLoader = new FXMLLoader(RectangleApp.class.getResource("recApp.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
         stage.setTitle("Reading rectangles from file!");
         stage.setScene(scene);
         stage.show();

@@ -28,7 +28,7 @@ public class HelloController {
         int x = Integer.parseInt(textx.getText());
         int y = Integer.parseInt(texty.getText());
         try {
-            Rectangle r = new Rectangle(x, y);
+            RectangleMy r = new RectangleMy(x, y);
             label2.setText(String.valueOf(r.area()));
         }
         catch (Exception e){
